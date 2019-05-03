@@ -14,5 +14,5 @@ for line in lines:
     lats.append(float(eval(line)["pos"]["lat"]))
     longs.append(float(eval(line)["pos"]["lon"]))
 
-plt.plot(longs, lats)
+plt.scatter(longs, lats, 0.1)
 plt.show()
